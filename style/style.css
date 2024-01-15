@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #28cb8b;
-  --secondary-color: #263238;
+  --secondary-color: #4d4d4d;
   --info-color: #2194f3;
   --light-color: #fff;
   --font-faimaly: "Inter", sans-serif;
@@ -29,8 +29,14 @@ main {
   width: min(80%, 1440px);
   margin: auto;
 }
+main,
+footer,
+.banner-container {
+  padding: 0px 20px;
+}
 
 .title {
+  color: var(--secondary-color);
   font-size: 36px;
   font-weight: 600;
   line-height: 44px;
@@ -46,7 +52,7 @@ main {
   justify-content: space-between;
 }
 .container {
-  margin: 50px auto;
+  margin: 100px auto;
 }
 
 .primary-btn {
@@ -82,5 +88,86 @@ main {
 }
 
 /* banner section  */
+.banner-container {
+  gap: 100px;
+}
+.banner-image img {
+  width: 100%;
+}
+
+.banner-title {
+  font-size: var(--large-font);
+  color: var(--secondary-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.banner-title span {
+  color: var(--primary-color);
+}
+.banner-contain * {
+  margin-bottom: 20px;
+}
+
+.ellipse div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--primary-color);
+}
+.ellipse {
+  justify-content: center;
+  gap: 5px;
+  margin-top: 50px;
+}
+.ellipse div:nth-child(2) {
+  background-color: #6c9ec7;
+}
+.ellipse div:nth-child(3) {
+  background-color: #6ba3d1;
+}
 
 /* header section ends  */
+
+/* main section start */
+/* clints section start */
+.clients-container {
+  text-align: center;
+}
+
+.client-logo {
+  margin-top: 50px;
+}
+/* clints section ends*/
+
+/* community section starts*/
+.community-contaienr {
+  text-align: center;
+}
+
+.community-members {
+  margin-top: 50px;
+  gap: 200px;
+}
+
+.community-members .title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.community-container p,
+.pixelgrade-contain p {
+  font-size: var(--tiny-font);
+}
+/* community section ends*/
+
+/* pixelgrade-container starts */
+.pixelgrade-image img {
+  width: 100%;
+}
+.pixelgrade-container {
+  gap: 120px;
+}
+.pixelgrade-contain * {
+  margin-bottom: 20px;
+}
+/* pixelgrade-container ends */
