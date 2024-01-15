@@ -26,7 +26,7 @@ body {
 
 header,
 main {
-  width: min(80%, 1440px);
+  width: min(80%, 1640px);
   margin: auto;
 }
 main,
@@ -101,7 +101,8 @@ footer,
   font-weight: 600;
   white-space: nowrap;
 }
-.banner-title span {
+.banner-title span,
+.title span {
   color: var(--primary-color);
 }
 .banner-contain * {
@@ -161,13 +162,23 @@ footer,
 /* community section ends*/
 
 /* pixelgrade-container starts */
-.pixelgrade-image img {
-  width: 100%;
-}
 .pixelgrade-container {
-  gap: 120px;
+  gap: 100px;
 }
 .pixelgrade-contain * {
   margin-bottom: 20px;
 }
 /* pixelgrade-container ends */
+
+/* Help reinvent section */
+.help-reinvent-right .help-member {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.member {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* Help reinvent section */
